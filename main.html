@@ -1,16 +1,99 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 0.5rem;
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <header>
+        <h1>Apple Varieties</h1>
+    </header>
+    
+    <section class="product">
+        <div class="product__photo">
+            <div class="photo-container">
+                <div class="photo-main">
+                    <img src="green-apple.jpg" alt="Green Apple">
+                </div>
+                <div class="photo-album">
+                    <ul>
+                        <li><img src="green-apple1.jpg" alt="Green Apple 1"></li>
+                        <li><img src="green-apple2.jpg" alt="Green Apple 2"></li>
+                        <li><img src="green-apple3.jpg" alt="Green Apple 3"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="product__details">
+            <h2>Delicious Apples</h2>
+            <p class="price">$7.93</p>
+            <div class="variant">
+                <p>Select a color:</p>
+                <ul>
+                    <li><img src="green-icon.png" alt="Green Apple"></li>
+                    <li><img src="yellow-icon.png" alt="Yellow Apple"></li>
+                    <li><img src="orange-icon.png" alt="Orange Apple"></li>
+                    <li><img src="red-icon.png" alt="Red Apple"></li>
+                </ul>
+            </div>
+            <div class="description">
+                <h3>BENEFITS</h3>
+                <ul>
+                    <li>Apples are nutritious</li>
+                    <li>May be good for weight loss</li>
+                    <li>May be good for bone health</li>
+                    <li>Linked to a lower risk of diabetes</li>
+                </ul>
+            </div>
+            <button class="add-to-cart">ADD TO CART</button>
+        </div>
+    </section>
 
+    <section>
+        <h2>CSS Tables</h2>
+        <table>
+            <tr>
+                <th>Table-Header 1</th>
+                <th>Table-Header 2</th>
+            </tr>
+            <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+            </tr>
+            <tr>
+                <td>Cell 4</td>
+                <td>Cell 5</td>
+            </tr>
+            <tr>
+                <td>Cell 7</td>
+                <td>Cell 8</td>
+            </tr>
+            <tr>
+                <td>Cell 9</td>
+                <td>Cell 10</td>
+            </tr>
+        </table>
+    </section>
 </body>
-
 </html>
